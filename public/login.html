@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./ryddeapp.css">
+</head>
+<body>
+    <h1>Logg inn/registrer deg</h1>
+    <form id="loginForm" action='/login' method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <br>
+
+        <br><br>
+        <button type="submit" name="login">Logg inn</button>
+    </form>
+
+    <h2 id="loginFeedback"></h2>
+    <form id = "registerForm" action='/register' method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <br>
+
+        <br>
+        <label for="mail">Epost:</label>
+        <input type="text" name="email" required>
+        <br>
+        <label for="mobile">Mobil:</label>
+        <input type="text" name="mobile" required>
+        <br>
+        <label for="role">Rolle:</label>
+        <input type="number" name="role">
+
+        <br>
+        <button type="submit" name="login">Registrer</button>
+    </form>
+    <div id="loginButtons">
+      <button class = "loginRegBtn" id="btnLogin">Logg inn</button>
+      <button class = "loginRegBtn" id="btnRegister">Registrer bruker</button>
+  </div>
+  <script src="./ryddeappLogin.js"></script>  
+</body>
+</html>
